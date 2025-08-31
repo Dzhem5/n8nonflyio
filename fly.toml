@@ -6,7 +6,6 @@ primary_region = "otp"
 [http_service]
   internal_port = 5678
   force_https = true
-  auto_stop_machines = "stop"  # Fly geçerli bir değer kabul ediyor
   auto_start_machines = true
   min_machines_running = 1
   processes = ["app"]
@@ -15,3 +14,12 @@ primary_region = "otp"
   memory = "512mb"
   cpu_kind = "shared"
   cpus = 2
+
+[env]
+  N8N_HOST = "0.0.0.0"
+  N8N_PORT = "5678"
+  DB_TYPE = "sqlite"
+  EXECUTIONS_PROCESS = "main"
+  N8N_BASIC_AUTH_ACTIVE = "true"
+  N8N_BASIC_AUTH_USER = "admin"
+  N8N_BASIC_AUTH_PASSWORD = "yourpassword"
