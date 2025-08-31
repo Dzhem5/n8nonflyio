@@ -1,8 +1,3 @@
-# fly.toml app configuration file generated for n8nsoda on 2025-08-31T19:11:41Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
 app = "n8nsoda"
 primary_region = "otp"
 
@@ -11,7 +6,7 @@ primary_region = "otp"
 [http_service]
   internal_port = 5678
   force_https = true
-  auto_stop_machines = "never"  # artık otomatik kapanmayacak
+  auto_stop_machines = "stop"  # Fly geçerli bir değer kabul ediyor
   auto_start_machines = true
   min_machines_running = 1
   processes = ["app"]
@@ -19,4 +14,4 @@ primary_region = "otp"
 [[vm]]
   memory = "512mb"
   cpu_kind = "shared"
-  cpus = 2  # 2x shared CPU
+  cpus = 2
