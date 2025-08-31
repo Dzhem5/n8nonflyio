@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for n8nonflyio-wz6gkw on 2025-08-31T19:02:06Z
+# fly.toml app configuration file generated for n8nsoda on 2025-08-31T19:11:41Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'n8nonflyio-wz6gkw'
-primary_region = 'fra'
+app = 'n8nsoda'
+primary_region = 'otp'
 
 [build]
 
